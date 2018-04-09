@@ -42,6 +42,14 @@ fis.match('*.md', {
   rExt: '.html'
 });
 
+// 加载es6插件
+fis.match('*.es6', {
+  parser: fis.plugin('translate-es6', {
+    presets: ['es2015']
+  }),
+  rExt: '.js' // .es6 最终修改其后缀为 .js
+})
+
 // sass打包配置
 fis.match('::package', {
   // 关于打包配置，请参考：https://github.com/fex-team/fis3-packager-deps-pack
@@ -55,24 +63,22 @@ fis.match('::package', {
   })
 })
 
+// 生产配置
 fis.media('prod')
+  .match('/page/**.{png,js,css}', {
+    useHash: true
+  })
+  .match('/widget/**.{png,js,css}', {
+    useHash: true
+  })
   .match('::package', {
     // 关于打包配置，请参考：https://github.com/fex-team/fis3-packager-deps-pack
     packager: fis.plugin('deps-pack', {
       'pkg/frame.css': [
         '/static/scss/**.css',
         '/static/scss/**.scss',
-        '/widget/**.scss'
-      ],
-      'pkg/boot.js': [
-        'static/js/require.js', 
-        'components/jquery/jquery.js',
-        'components/bootstrap/bootstrap.js',
-        'components/bootstrap/bootstrap.js:deps' // 匹配依赖部分
-      ],
-      'pkg/app.js': [
-        'page/examples/form.js',
-        'page/examples/form.js:deps'
+        '/widget/**.scss',
+        '/page/**.scss',
       ]
     })
   })

@@ -1,77 +1,180 @@
-@import "compass/css3/border-radius";
-@import "compass/css3/text-shadow";
+@import "_function";
 
-.jello-toc {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.am-with-topbar-fixed-top { padding-top: 0; }
 
-    background-color: #f7f5fa;
+.am-topbar-fixed-top {
+    z-index: 1024;
+}
 
-    // 通过 compass 轻松解决 css3 兼容行问题。
-    @include text-shadow(#fff 0 1px 0);
-    @include border-radius(5px);
+.am-topbar {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    a {
+    	color: #fff;
+    }
+    .am-topbar-brand { 
+		margin-right: 20px;
+		.logo {
+			width: 180px;
+			vertical-align: middle;
+		}
+	}
+	
+	.am-nav {
+		padding: 15px 0;
+		> li {
+            margin-right: 10px;
+			> a {
+                line-height: 30px;
+				font-size: 14px;
+				&:focus, &:hover {
+					background-color: transparent;
+				}
+				&:after {
+					border: none;
+				}
+			}
+			> a:hover,
+            &.on > a,
+			&.am-active > a,
+			&.am-active > a:hover,
+			&.am-active > a:focus {
+				@include border-radius(2px);
+    		    background: $primary;
+    		    color: #fff;
+			}
+		}
+	}
 
-    .nav {
-        & > li > a {
-            display: block;
-            color: #716b7a;
-            padding: 5px 20px;
+    .am-dropdown-content {
+        @include border-radius(2px);
+        border: none;
+        > li.am-active a {
+            background-color: $primary;
+            &:hover {
+                color: $white;
+            }
         }
-
-        & > .active > a,
-        & > .active:hover > a,
-        & > .active:focus > a {
-            font-weight: bold;
-            color: #563d7c;
-            background-color: transparent;
-            border-right: 1px solid #563d7c;
-            @include border-radius(0);
+        > li a:hover {
+            color: $primary;
         }
+        &:before {
+            border-bottom-color: $white;
+        }
+    }
 
-        .nav {
+    .am-topbar-right {
+        > div , > ul {
+            float: left;
+        }
+        .user-info {
             display: none;
-            margin-bottom: 8px;
-
-            & > li > a {
-                padding-top: 3px;
-                padding-bottom: 3px;
-                padding-left: 30px;
-                font-size: 90%;
+            padding: 10px;
+            cursor: pointer;
+            color: #fff;
+            .user {
+                vertical-align: middle;
+                .quit {
+                    color: $font-light;
+                }
+                .user_name {
+                    display: inline-block;
+                    max-width: 80px;
+                    height: 22px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 31px;
+                }
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                vertical-align: middle;
+                margin-right: 10px;
+                border-radius: 20px;
             }
         }
     }
+	.aldbim-topbar-btn {
+		padding: 15px 0;
+		li {
+            margin-left: 10px;
+			float: left;
+        	line-height: 28px;
+        	border: 1px solid #fff;
+        	@include border-radius(2px);
+        	a {
+        		font-size: 14px;
+        		padding: 0 10px;
+        	}
+        	&:hover,
+        	&:focus,
+        	&.am-active {
+        		background-color: $primary;
+    		    border: 1px solid $primary;
+    		    color: #fff;
+        	}
+		}
+	}
+}
 
-    &.affix {
-        position: static;
+.kefu {
+    position: fixed;
+    right: 0;
+    top: 250px;
+    width: 28px;
+    height: 108px;
+    background-color: #20a0ff;
+    border-radius: 4px 0px 0px 4px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    cursor: pointer;
+    z-index: 999;
+    i {
+        display: inline-block;
+        background: url('/static/images/server.svg') no-repeat;
+        background-size: 100%;
+        width: 16px;
+        height: 16px;
+        vertical-align: top;
+    }
+    span {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 16px;
+        margin-left: 4px;
     }
 }
 
-
-@media (min-width: 992px) {
-    .jello-toc{
-        &.affix {
-            position: fixed;
-            width: 213px;
-            top: 50px;
-        }
-
-        &.affix-bottom {
-            position: absolute;
-            width: 213px;
-        }
-
-        .nav > .active > ul {
-          display: block;
-        }
+@media only screen and (max-width: 1024px) {
+    .am-topbar-nav > li > a:hover,
+    .am-topbar-nav > li.am-active > a,
+    .am-topbar-nav > li.am-active > a:hover,
+    .am-topbar-nav > li.am-active > a:focus {
+        border-radius: 0px;
+        color: #fff;
+        background-color: transparent;
     }
-}
 
-@media (min-width: 1200px) {
-    .jello-toc {
-        &.affix, &.affix-bottom {
-            width: 263px;
-        }
+    .am-topbar-nav > li { line-height: 28px; }
+
+    .am-nav > li > a:hover,
+    .am-nav > li.am-active > a,
+    .am-nav > li.am-active > a:hover,
+    .am-nav > li.am-active > a:focus {
+        color: #fff;
+        background-color: #5cadff;
+        border-radius: 3px;
+        cursor: default;
     }
+
+    .aldbim-topbar-btn > li > a {
+        width: 100%;
+        margin-top: 1.6rem;
+        cursor: default;
+    }
+
+    .aldbim-nav-btn { margin-left: 0; }
 }

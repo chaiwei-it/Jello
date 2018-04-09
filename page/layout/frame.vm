@@ -33,6 +33,6 @@
 
     #script()
     // 启用 bootstrap
-    require(['bootstrap']);
+    ##require(['bootstrap']);
     #end
 #end## end of html

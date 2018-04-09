@@ -1,1 +1,69 @@
+/* 头部 */
+.m-hd {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  height: 130px;
+  padding: 45px 0 0 0;
+}
+.m-hd ul {
+  margin: 0;
+}
+.m-hd ul li {
+  list-style-type: none;
+}
+.m-hd .am-container {
+  position: relative;
+}
+.m-hd .am-sticky {
+  background: #1a1f2a;
+  padding: 15px 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  opacity: 0.95;
+}
+.m-hd .am-header a {
+  color: #fff;
+}
+.m-hd .m-nav a {
+  color: #fff;
+}
+.m-hd .m-nav a:hover {
+  background: #ba1f2e;
+  border-radius: 2px;
+  -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+  transition: background-color 300ms ease-out, border-color 300ms ease-out;
+}
+.m-hd .am-nav > li.am-active > a, .m-hd .am-nav > li.am-active > a:focus, .m-hd .am-nav > li.am-active > a:hover {
+  color: #fff;
+  background-color: #ba1f2e;
+  cursor: default;
+}
+.m-hd .am-dropdown-content {
+  background: #ba1f2e;
+  border: none;
+}
+.m-hd .am-dropdown-content > li > a:hover {
+  color: #fff;
+}
+.m-hd .am-dropdown-content:after, .m-hd .am-dropdown-content:before {
+  border: 8px dashed #ba1f2e;
+}
+.m-hd .am-dropdown-content > .am-active > a,
+.m-hd .am-dropdown-content > .am-active > a:focus,
+.m-hd .am-dropdown-content > .am-active > a:hover {
+  background-color: #d22e3e;
+}
 
+.m-logo {
+  display: block;
+  float: left;
+  font-size: 22px;
+  line-height: 40px;
+  width: 165px;
+  color: #fff;
+  text-indent: -9999px;
+  background: url('../images/logo.png?1444011587') no-repeat left center;
+  -webkit-background-size: 125px 40px;
+  background-size: 125px 40px;
+  margin-right: 20px;
+}
