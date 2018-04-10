@@ -2,14 +2,10 @@
     <section data-am-sticky class="am-show-md-up">
     <div class="am-container">
         <a href="/" rel="nofollow" class="m-logo"><i class="am-icon-spinner"></i> J2 Network</a>
-    <!--        <ul class="am-fr m-about">
-                <li><a href="/about/" class="am-btn am-btn-danger am-btn-sm am-radius" rel="nofollow">关于我们</a></li>
-                <li><a href="/contact/" class="am-btn am-btn-danger am-btn-sm am-radius" rel="nofollow">联系我们</a></li>
-            </ul> -->
         <nav>
           <ul class="m-nav am-nav am-nav-pills am-fr">
             <li><a href="/" rel="nofollow">网站首页</a></li>
-            <li class="am-dropdown" data-am-dropdown><a href="/anli.html" rel="nofollow" class="am-dropdown-toggle" data-am-dropdown-toggle>案例展示 <span class="am-icon-caret-down"></span></a>
+            <!-- <li class="am-dropdown" data-am-dropdown><a href="/anli.html" rel="nofollow" class="am-dropdown-toggle" data-am-dropdown-toggle>案例展示 <span class="am-icon-caret-down"></span></a>
               <ul class="am-dropdown-content">
                 <li><a href="/wangzhan.html" rel="nofollow">网站建设</a></li>
                 <li><a href="" rel="nofollow">平面设计</a></li>
@@ -18,7 +14,7 @@
                 <li><a href="" rel="nofollow">电商设计</a></li>
                 <li><a href="" rel="nofollow">品牌策划</a></li>
               </ul>
-            </li>
+            </li> -->
             <li><a href="/fuwu.html" rel="nofollow">服务内容</a></li>
             <li><a href="/zixun.html" rel="nofollow">最新动态</a></li>
             <li><a href="/about.html" rel="nofollow">关于我们</a></li>
