@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>$title #if( $titleAffix ) - $titleAffix#end</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+        <title>$title</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo-title.png" />
         <link rel="stylesheet" href="/components/amaze/assets/css/amazeui.min.css">
         <link rel="stylesheet" href="/components/amaze/assets/css/app.css">
         #require("/components/amaze/assets/css/amazeui.css")
@@ -22,11 +22,6 @@
             ## 定义一个区域
             #block("body")#end
         </div>
-        <!--livereload-->
     #end## end of body
 
-    #script()
-    // 启用 bootstrap
-    ##require(['bootstrap']);
-    #end
 #end## end of html
