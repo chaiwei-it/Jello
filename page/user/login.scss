@@ -1,32 +1,20 @@
 @import "_function";
 
  /*login body*/
-
- .ly-login{
- 	background:#f7f7f7;
- 	border-top: 1px solid #f7f7f7;
- }
-
- .farther{
- 	display: flex;
- 	display: flex;
-  	flex-direction:row;
-  	flex-wrap:nowrap;
-  	justify-content:space-around;
-   	align-items:center;
- }
-
-
-
-
-
+.login-form {
+	position:absolute;
+  right:20px;
+  left:20px;
+}
+ 
 
  /*content*/
 /*padding:80px 0;*/
 .content{background:#f7f7f7;}
-.content .wrap{border:1px solid #d3d3d3;overflow:hidden;background:#ffffff;}
-.content .left-side{width:548px;float:left;border-right:1px solid #d3d3d3;}
-.content .right-side{
+
+.wrap{border:1px solid #d3d3d3;overflow:hidden;background:#ffffff;}
+.left-side{width:548px;float:left;border-right:1px solid #d3d3d3;}
+.right-side{
 	width:652px;
 	float:left;
 	padding-left:150px;

@@ -6,10 +6,10 @@
             #widget("/widget/header/header.vm")
         #end
 
-        <div id="center">
-			<div id="content">
-				#block("content")#end
-			</div>
+        <div class="c-center">
+    			<div class="c-content">
+    				#block("content")#end
+    			</div>
         </div>
         
 

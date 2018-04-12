@@ -8,7 +8,11 @@
   background-color: #222222; 
 }
 
-.c-logo {
+.c-logo{
+  margin-top: 20px;
+}
+
+.c-logo a{
   display: block;
   float: left;
   font-size: 22px;
@@ -23,10 +27,15 @@
 }
 
 .c-nav ul li {
-  height: 30px;
-  padding: 5px 2;
-  margin: 20px 13px;
+  height: 40px;
+  padding: 0 10px;
+  margin: 20px 10px;
   float: left;
+}
+
+.c-nav ul li a {
+  height: 40px;
+  line-height: 40px;
 }
 
 .c-nav ul li:hover{
@@ -42,9 +51,14 @@
 }
 
 .c-user ul li {
-  height: 30px;
-  margin: 25px 0;
+  height: 40px;
+  margin: 20px 0;
   float: left;
+}
+
+.c-user ul li a {
+  height: 40px;
+  line-height: 40px;
 }
 
 

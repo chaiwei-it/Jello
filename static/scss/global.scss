@@ -19,14 +19,15 @@ a {
 
 
 
-#center {
+.c-center {
     height:auto; 
     min-height:100%; 
     _height:100%; 
 }
 
-#content {
+.c-content {
     padding-top:80px;
+    min-height:100%;
     padding-bottom:100px;
 }
 

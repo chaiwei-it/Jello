@@ -1,8 +1,8 @@
 <header class="c-hd">
     <section data-am-sticky class="am-show-md-up">
       <div class="am-container">
-        <div class="am-fl">
-          <a href="/" rel="nofollow" class="c-logo"><i class="am-icon-spinner"></i>CJ Note</a>
+        <div class="am-fl c-logo">
+          <a href="/" rel="nofollow" class=""><i class="am-icon-spinner"></i>CJ Note</a>
         </div> 
         <div class="am-fr"> 
           <div class="am-fl c-nav">
